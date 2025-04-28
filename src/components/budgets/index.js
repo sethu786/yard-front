@@ -16,7 +16,7 @@ const Budgets = () => {
 
   const fetchCategories = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/categories");
+      const res = await fetch("https://yarb-back-1.onrender.com/api/categories");
       if (!res.ok) throw new Error("Failed to fetch categories");
       const data = await res.json();
       setCategories(data);
@@ -27,7 +27,7 @@ const Budgets = () => {
 
   const fetchBudgets = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/budgets");
+      const res = await fetch("https://yarb-back-1.onrender.com/api/budgets");
       if (!res.ok) throw new Error("Failed to fetch budgets");
       const data = await res.json();
       setBudgets(data);
@@ -43,7 +43,7 @@ const Budgets = () => {
       return;
     }
     try {
-      const res = await fetch("http://localhost:3000/api/categories", {
+      const res = await fetch("https://yarb-back-1.onrender.com/api/categories", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const Budgets = () => {
       return;
     }
     try {
-      await fetch("http://localhost:3000/api/budgets", {
+      await fetch("https://yarb-back-1.onrender.com/api/budgets", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

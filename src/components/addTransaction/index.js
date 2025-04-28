@@ -35,7 +35,7 @@ const AddTransaction = () => {
 
     try {
 
-      const response = await fetch("http://localhost:3000/api/transactions", {
+      const response = await fetch("https://yarb-back-1.onrender.com/api/transactions", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

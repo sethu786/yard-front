@@ -53,13 +53,13 @@ const Dashboard = () => {
   }, [prepareBudgetComparison]);
 
   const fetchBudgets = useCallback(async () => {
-    const res = await fetch("http://localhost:3000/api/budgets");
+    const res = await fetch("https://yarb-back-1.onrender.com/api/budgets");
     const data = await res.json();
     setBudgets(data);
   }, []);
 
   const fetchTransactions = useCallback(async () => {
-    const res = await fetch("http://localhost:3000/api/transactions");
+    const res = await fetch("https://yarb-back-1.onrender.com/api/transactions");
     const data = await res.json();
     setTransactions(data);
     processTransactionData(data);

@@ -5,13 +5,13 @@ const Transactions = () => {
   const [transactions, setTransactions] = useState([]);
 
   const fetchTransactions = async () => {
-    const res = await fetch("http://localhost:3000/api/transactions");
+    const res = await fetch("https://yarb-back-1.onrender.com/api/transactions");
     const data = await res.json();
     setTransactions(data);
   };
 
   const deleteTransaction = async (id) => {
-    await fetch(`http://localhost:3000/api/transactions/${id}`, { method: "DELETE" });
+    await fetch(`https://yarb-back-1.onrender.com/api/transactions/${id}`, { method: "DELETE" });
     fetchTransactions();
   };
 
