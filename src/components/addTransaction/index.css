@@ -1,0 +1,89 @@
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 1rem;
+  }
+  
+  .transaction-form input, .transaction-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  
+  .transaction-form button {
+    background-color: #00C49F;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .success-msg {
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .error-msg {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .transaction-form select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  .add-transaction-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .transaction-form input,
+  .transaction-form select,
+  .transaction-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .transaction-form button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .transaction-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .status-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .add-transaction-container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  }
+  

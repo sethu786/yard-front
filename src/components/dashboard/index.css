@@ -1,0 +1,75 @@
+.dashboard-container {
+    padding: 2rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: #f9fafb;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #2563eb;
+  }
+  
+  .charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .chart-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .insights-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .insights-list li {
+    margin-bottom: 0.5rem;
+    color: #dc2626;
+  }
+  .add-transaction-form {
+    margin-bottom: 2rem;
+  }
+  
+  .add-transaction-form form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .add-transaction-form input, .add-transaction-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .add-transaction-form button {
+    background-color: #00C49F;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
